@@ -1,8 +1,8 @@
 pico-8 cartridge // http://www.pico-8.com
 version 38
 __lua__
--- aventure
--- fatouma, jeremie, claire
+--aventure
+--fatouma, jeremie, claire
 
 function _init()	
 	map_setup()
