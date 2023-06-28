@@ -269,6 +269,7 @@ function enter_volcano(x,y)
 		color=8
 		create_msg("belzebuth","welcome to my lair,\ncome in if you dare...","if you can find gold coins,\nyou won't get destroyed.")
 		visited_volcano=true
+		sfx(2)
 end
 
 function belzebuth(x,y)
@@ -388,7 +389,7 @@ function f_interact(x,y)
 	elseif (is_tile(lives,x,y) and (mget(x,y)==80 or mget(x,y)==81)) then
 		loose_life(x,y)
 	elseif (is_tile(lives,x,y) and (p.life<3) and (mget(x,y)==84 or mget(x,y)==85))  then
-		get_life(x,y)
+		get_life_niv2(x,y)
 	elseif (is_tile(lives,x,y) and (p.life<3) and (mget(x,y)==148 or mget(x,y)==149))  then
 		get_life(x,y)
 	elseif (is_tile(interact,x,y) and mget(x,y)==130 and not visited_volcano) then
@@ -407,6 +408,11 @@ function get_life(x,y)
 p.life+=1
 next_tile_f(x,y)
 end
+
+function get_life_niv2(x,y)
+	p.life+=1
+	next_tile_def2(x,y)
+	end
 
 function next_tile_def2(x,y)
 	sprite=mget(x,y)
