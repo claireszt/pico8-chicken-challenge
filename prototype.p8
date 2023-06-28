@@ -370,6 +370,8 @@ function f_interact(x,y)
 		loose_life(x,y)
 	elseif (is_tile(lives,x,y) and (mget(x,y)==80 or mget(x,y)==81)) then
 		loose_life(x,y)
+	elseif (is_tile(lives,x,y) and (p.life<3) and (mget(x,y)==84 or mget(x,y)==85))  then
+		get_life(x,y)
 	elseif (is_tile(lives,x,y) and (p.life<3) and (mget(x,y)==148 or mget(x,y)==149))  then
 		get_life(x,y)
 	elseif (is_tile(interact,x,y) and mget(x,y)==130 and not visited_volcano) then
@@ -385,6 +387,11 @@ end
 function get_life(x,y)
 p.life+=1
 next_tile_f(x,y)
+end
+
+function next_tile_def2(x,y)
+	sprite=mget(x,y)
+	mset(x,y,64)
 end
 
 function next_tile_f(x,y)
