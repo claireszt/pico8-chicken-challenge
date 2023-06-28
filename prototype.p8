@@ -9,7 +9,6 @@ function _init()
 	make_player()
 	make_enemy()
 	spawn_balls()
---	add_balls()
 	init_msg()
 	sfx(7)
 	
@@ -313,8 +312,8 @@ end
 
 function make_player()
 	p={
-		x=33,
-		y=7,
+		x=3,
+		y=3,
 		sprite=1,
 		wood=0,
 		water=0,
