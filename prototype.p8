@@ -536,14 +536,20 @@ function move_balls()
 for ball in all(b) do
 		
 		new_bx=ball.x
+		new_by=ball.y
 
 for m=1,14 do
-		if new_bx < 62 then
-		new_bx+=1/16
-		ball.flip=false
+		if new_bx==p.x and new_by==p.y and p.life>1 then
+			p.x = 33
+			p.y = 07
+			loose_life()
+		else if new_bx < 62 then
+			new_bx+=1/16
+			ball.flip=false
 		else
-		new_bx-=28
+			new_bx-=28
 		end
+	end
 end
 	
 	if (timer<0) then 
