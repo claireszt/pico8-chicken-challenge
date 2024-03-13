@@ -1,4 +1,32 @@
-# doris-pico-8-FatoumaJeremyClaire
-doris-pico-8-FatoumaF created by GitHub Classroom
+# Pico-8 Project: Chicken Challenge
 
-https://www.lexaloffle.com/bbs/?tid=53272
+## Overview
+
+This project was developed as part of our first group project at Ada Tech School. It served as an opportunity for us to explore coding with Lua within the Pico-8 environment. 
+
+## Getting Started
+
+To play the game, you can access the playable version on the Pico-8 BBS platform [here](https://www.lexaloffle.com/bbs/?tid=53272).
+
+If you would like to contribute to the project or explore the code, follow the steps below:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/claireszt/pico8-chicken-challenge.git
+   
+2. Open the project in Pico-8 by launching the Pico-8 executable and loading the .p8 file.
+3. Explore the codebase and make modifications as desired.
+
+## Features
+
+- **3 Levels with Increasing Difficulty**: Enjoy a progressively challenging experience as you advance through the game.
+  
+- **Dialog Boxes for Clear Goals**: Stay informed and engaged with helpful dialog boxes that guide you through each level's objectives.
+  
+- **Game Over and Game Won Screens**: Experience satisfying conclusions with distinct screens for both victorious and unsuccessful outcomes.
+
+## Contributors
+- [Claire](https://github.com/claireszt)
+- [Jérémie](https://github.com/Jezzatator)
+- [Fatouma](https://github.com/FatoumaF)
